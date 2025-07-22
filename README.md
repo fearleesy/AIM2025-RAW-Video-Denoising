@@ -11,8 +11,8 @@ This challenge encourages development of solutions that leverage temporal redund
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/fearleesy/aim2025-raw-video-denoising.git
-cd aim2025-raw-video-denoising
+git clone https://github.com/fearleesy/AIM2025-RAW-Video-Denoising
+cd AIM2025-RAW-Video-Denoising/
 
 # 2. Install dependencies
 pip install -r requirements.txt
