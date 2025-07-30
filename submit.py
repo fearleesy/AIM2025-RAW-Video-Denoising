@@ -21,7 +21,7 @@ def make_prediction(sequence_array, c_h, c_w, model):
     
     src = src.to(args.device).unsqueeze(0)
     result = model(src)
-    result = _ch4_to_bayer(result).cpu().detach().numpy()
+    return _ch4_to_bayer(result).cpu().detach().numpy()
 
 def center_crop_prediction_coords(prediction: np.ndarray, crop_size: int = 1024) -> np.ndarray:
     assert len(prediction.shape) == 2, "Prediction must be a 2D Bayer image"
